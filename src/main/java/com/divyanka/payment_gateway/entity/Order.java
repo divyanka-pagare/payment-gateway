@@ -7,10 +7,13 @@ import java.time.LocalDateTime;  // date and time
 
 @Entity   // this class is database table
 @Table(name = "orders")
-@Data
-@Builder
-@NoArgsConstructor
-@AllArgsConstructor
+
+
+// this are from Lombok
+@Data  //getters/setters/toString
+@Builder  // easy object creation
+@NoArgsConstructor  // empty constructor
+@AllArgsConstructor  // full constructor
 
 public class Order {
     @Id
