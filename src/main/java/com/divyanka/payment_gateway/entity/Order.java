@@ -1,11 +1,11 @@
 package com.divyanka.payment_gateway.entity;
 
-import jakarta.persistence.*;
-import lombok.*;
-import java.math.BigDecimal;
-import java.time.LocalDateTime;
+import jakarta.persistence.*; // database mapping (JPA)
+import lombok.*;    // reduces boilerplate code
+import java.math.BigDecimal;   // precise money handling
+import java.time.LocalDateTime;  // date and time 
 
-@Entity
+@Entity   // this class is database table
 @Table(name = "orders")
 @Data
 @Builder
