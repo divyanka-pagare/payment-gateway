@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/payment_db
+    username: root
+    password: Ritesh@07
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+app:
+  jwt:
+    secret: B0WuXA9ruJQDE2B96CYQPfOaIEIV3046NUcTgu+LX8o=
+    expiration-ms: 86400000
+
+razorpay:
+  key-id: rzp_test_placeholder
+  key-secret: placeholder
+  webhook-secret: placeholder
