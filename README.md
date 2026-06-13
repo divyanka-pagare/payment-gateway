@@ -1,3 +1,5 @@
+## Payment Gateway
+
 ● Built a secure REST API for end-to-end payment processing using Spring Boot, 
   Spring Security with JWT authentication, and MySQL — supporting merchant registration, 
   order creation, and role-based access control.
