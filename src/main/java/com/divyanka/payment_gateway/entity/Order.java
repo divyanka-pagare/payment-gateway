@@ -27,6 +27,11 @@ public class Order {
     @JoinColumn(name = "user_id")
     private User user;
 
+
+    @Column(nullable = false, precision = 10, scale = 2)
+    private BigDecimal amount;
+    
+    @Column(nullable = false, length = 3)
     private String currency;
 
     @Enumerated(EnumType.STRING)

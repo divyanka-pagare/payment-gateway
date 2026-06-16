@@ -14,6 +14,6 @@ app:
     expiration-ms: 86400000
 
 razorpay:
-  key-id: rzp_test_placeholder
-  key-secret: placeholder
+  key-id: rzp_test_T2IZ25xDYCgJes
+  key-secret: h1tz6LfdIfB1Tz9oigCNJAqA
   webhook-secret: placeholder
