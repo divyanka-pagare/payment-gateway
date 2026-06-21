@@ -22,7 +22,7 @@ import java.util.List;
 public class ReconciliationService {
 
     private final PaymentRepository paymentRepository;
-    private final RefundRepository refundRepository;
+    // private final RefundRepository refundRepository;
 
     @Scheduled(cron = "0 0 0 * * *")
     public void generateDailyReport() {
