@@ -17,3 +17,9 @@ razorpay:
   key-id: rzp_test_T2IZ25xDYCgJes
   key-secret: h1tz6LfdIfB1Tz9oigCNJAqA
   webhook-secret: placeholder
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+  api-docs:
+    path: /v3/api-docs
