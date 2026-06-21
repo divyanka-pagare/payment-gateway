@@ -28,12 +28,14 @@ public class SecurityConfig {
           .csrf(csrf -> csrf.disable())
           .sessionManagement(sm -> sm
             .sessionCreationPolicy(SessionCreationPolicy.STATELESS))
-          .authorizeHttpRequests(auth -> auth
+            .authorizeHttpRequests(auth -> auth
             .requestMatchers("/api/auth/**").permitAll()
             .requestMatchers("/api/webhook/**").permitAll()
             .requestMatchers("/swagger-ui/**", "/v3/api-docs/**").permitAll()
             .requestMatchers("/api/admin/**").hasRole("ADMIN")
             .anyRequest().authenticated())
+            // .authorizeHttpRequests(auth -> auth
+            //   .anyRequest().permitAll())
           .addFilterBefore(jwtFilter,
             UsernamePasswordAuthenticationFilter.class);
         return http.build();
