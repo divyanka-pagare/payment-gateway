@@ -1,8 +1,8 @@
 spring:
   datasource:
     url: jdbc:mysql://localhost:3306/payment_db
-    username: root
-    password: Ritesh@07
+    username: ${DB_USER:root}
+    password: ${DB_PASS}
   jpa:
     hibernate:
       ddl-auto: update
@@ -10,13 +10,13 @@ spring:
 
 app:
   jwt:
-    secret: B0WuXA9ruJQDE2B96CYQPfOaIEIV3046NUcTgu+LX8o=
+    secret: ${JWT_SECRET}
     expiration-ms: 86400000
 
 razorpay:
-  key-id: rzp_test_T2IZ25xDYCgJes
-  key-secret: h1tz6LfdIfB1Tz9oigCNJAqA
-  webhook-secret: placeholder
+  key-id: ${RAZORPAY_KEY_ID}
+  key-secret: ${RAZORPAY_KEY_SECRET}
+  webhook-secret: ${RAZORPAY_WEBHOOK_SECRET}
 
 springdoc:
   swagger-ui:
